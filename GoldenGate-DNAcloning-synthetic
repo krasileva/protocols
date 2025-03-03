@@ -1,0 +1,166 @@
+Golden Gate Cloning workflow: cloning from synthetic constructs
+
+Nomenclature:
+
+Gene string = synthetic fragment. This is synthesized piece of DNA which is linear and not sub-cloned.
+
+Sub-cloned genes = synthesized genes that have been cloned into a generic vector.
+
+If starting with synthetic in a generic vector, make a stock of it for the future
+a.	Measure concentration on nanodrop and record on the tube and in lab stock file.
+b.	Transform 1 uL into 25 uL of chemically competent DH5a (heat shock), plate on antibiotic selection (information provided by the company, commonly used concentration of antibiotics listed in appendix).
+c.	Next day, pick a colony from transformation plate and start 10 mL liquid culture.
+d.	Miniprep 3 mL. Send miniprep to Sanger sequencing to confirm there are no errors in the cloned gene. If good, make a glycerol stock and record it in the lab stock file. If not, go back to the plate and miniprep a few more.
+
+
+If starting with gene string, dilute to 10 ng/uL and make a record of the synthetic in lab stockfile.
+
+I.	Set up in silico cloning file simulating the cloning you want to achieve in SnapGene.
+
+1.	Import the synthesized insert sequence and add Bsa1 sites plus additional base pairs if needed.
+2.	Import vector sequence.
+3.	Simulate restriction/ligation with the vector and insert(s)
+4.	Design primers if you need to add Bsa1 sites to the fragments. Pay attention to check following
+a.	Do you have random base pair overhangs past Bsa1 site to allow better restriction digest?
+b.	Do you have unique overhangs is cloning multiple fragments?
+c.	Is your sub-cloned fragment in frame with the tag in the plasmid (if cloning protein expression)?
+d.	Insert binding sequence is > 15 bp and Tm of primers >60 oC.
+
+II.	PCR (to add Bsa1 sites if needed) 
+
+Dilute the gene string / sub-cloned gene template to 1 ng/uL as a working stock.
+
+Set up PCR test reaction: 
+
+PCR (without DMSO)
+ 
+Template             1 uL of 10 ng/uL
+P1                           1 uL of 10 uM stock
+P2                           1 uL of 10 uM stock
+Buffer                   4 uL
+dNTP([])              2.5 uL
+MgCl2                   0.5 uL
+Phusion (1:1)       0.25 uL
+H2O                       9.75 uL
+ 
+PCR (with DMSO)
+ 
+Template             1 uL of 10 ng/uL
+P1                           1 uL of 10 uM stock
+P2                           1 uL of 10 uM stock
+Buffer                   4 uL
+dNTP([])              2.5 uL
+MgCl2                   0.5 uL
+DMSO                     0.6 uL of supplied stock (final concentration 3%)             
+Phusion (1:1)       0.25 uL
+H2O                       9.15 uL
+ 
+
+PCR cycle no DMSO :
+98           2
+----Cycle x 34----
+98           15 sec
+55           15 sec
+72           1min/kb
+---------------------
+72          10 min 
+ 
+
+
+
+Set up PCR reaction as following
+
+1 uL template (either gene string or sub-cloned gene)
+25 uL 2x KAPA mix
+1.25 uL Primer Fw (20 microM)
+1.25 uL Primer Rev (20 microM)
+21.5 uL H20
+--------------------------
+50 uL total
+
+Set up on ice, add KAPA mix last, vortex and briefly spin down.
+
+PCR conditions
+
+95 oC for 3 min 
+------30 cycles----- 
+98 oC 20 sec 
+60 oC 15 sec 
+72 oC 1 min/kb  
+------------------------- 
+72 oC 15min 
+hold at 14 oC 
+
+Run PCR on the gel, take a picture, then cut out the band of the correct size. Purify using Zymogen Gel purification kit* (recommended by TSL Synbio to get higher DNA concentration). It is important to purify the PCR product from the gel rather than directly from PCR reaction to eliminate all primers which can interfere with assembly.
+Elute purified PCR reaction in 30 uLTris HCl (EB buffer). Measure concentration by nanodrop.
+
+*safe stopping point. Once the gel slice is in the guanidine buffer (first buffer that dissolves a gel piece), you can leave it on the bench for a few hours or put it into fridge overnight* 
+
+GG dig lig reaction
+
+Calculate volumes of vector and insert so that ratio of insert to vector 2:1 molar ratio
+You can use the GG template available in the lab protocols folder. This template assumes vector concentration of 100 ng/uL. If your vector is more concentrated, dilute it to 100 ng/uL and use 1 uL of this for the reaction. If your vector concentration is <100 ng/uL, increase the volume accordingly so you are putting 100 ng, and adjust amount of water.
+
+If your original plasmid that was used as template for PCR and final acceptor plasmid have the same antibiotic selection, include an additional control (no vector dig lig reaction) with 1 uL of water in place of vector.
+
+Sample reaction setup
+
+	HF	GFP
+Vector	1.0	1.0
+	pLCSL22009	pLCSL22008
+Insert-1	0.93	0.86
+Insert-2	0.62	0.58 
+Insert-3	 	 
+Insert-4	 	 
+Insert-5	 	 
+Buffer	1.5	1.5
+BSA (10x)	1.5	1.5
+Bsa1	0.5	0.5
+Ligase	0.5	0.5
+Water	8.445102509	8.555231885
+
+Put reaction in PCR thermocycler with following cycling conditions
+
+37 oC   20 sec
+---26 cycles---
+37 oC   3 min
+16 oC   4 min
+----------------
+50 oC   5 min
+80 oC   5 min
+16 oC hold
+
+Transform 5 uL into (5 uL electro-competent E coli + 70 uL 10% Glycerol). Plate on the appropriate antibiotic selection of your acceptor plasmid. 
+
+Next day, pick up 2-8 colonies and check the plasmid size with colony cracking protocol (see Appendix 2). Set up minipreps for positive colonies with plasmid of the correct size (note that supercoiled circular plasmid will migrate faster than linear ladder, so also run 1 uL of an empty acceptor vector as a control). Send minipreps for sequencing to check the junctions. If correct, sequence the rest of the insert (you need to sequence the whole gene end to end, not just junctions because errors could have been introduced during the PCR step)
+
+Add Sanger sequencing reads to your original SnapGene file to record actual sequences of the clone.
+
+ 
+Appendix I – antibiotic concentrations commonly used in the TSL lab for E. coli
+
+Antibiotic	Stock	Final	Fold dilution
+Kanamycin
+	50 mg/mL	50 ug/mL	1000x
+Carbenicillin (provides same selection as Ampicillin)	100 mg/mL	100 ug/mL	1000x
+
+Appendix II – colony cracking protocol for rapid plasmid check
+
+E. coli cells can be disrupted in an alkaline solution containing detergent. The lysate contains enough DNA to be detected in single lane of agarose gel. Protocol is derived with modifications from Shiraishi Lab’s adaptation of “Molecular Cloning” (Maniatis, Frisch, Sambrook, CSHL Press, 1982).
+
+1.	Using a tip, transfer a very small amount of colony into 20 uL of cracking buffer (50 mM NaOH, 0.5% SDS, 5 mM EDTA)
+2.	Incubate 10 min at 65 oC
+3.	Vortex for 1 minute*
+4.	Add loading buffer and run on agarose gel. If the sample is too viscous, too much E coli has been added or not enough vortexing to disrupt genomic DNA.
+5.	Plasmid DNA should be visible between 20-30 kb genomic DNA and low molecular weight RNAs**
+
+* at this step long genomic DNA is disrupted into smaller pieces of about 20-30 kb to help loading the DNA on the gel.
+** supercoiled circular plasmids run faster than linear DNA, so the plasmid will run smaller than linear ladder. Load 1 uL of empty vector as a control
+
+10 mL cracking buffer
+
+10 N NaOH  	50 uL
+10 % SDS     	500 uL
+0.5 M EDTA	100 uL
+ddH20		up to 10 mL		
+
