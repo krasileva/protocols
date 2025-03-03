@@ -1,0 +1,156 @@
+Safety notes:
+●	All steps with 2-Merc should be done inside chemical hoods, including opening Eppendorf tubes and running samples on the gel. 
+●	Eppendorf tubes pop open if liquid nitrogen gets inside, I use a secondary holder inside a styrofoam box to flash freeze tubes standing up.
+●	Tube lids can also pop open when boiled, always use tube clams to prevent this.
+●	300 mA is a very high current, always connect all of the wires before turning the power supply on, and turn it off before disconnecting wires.
+
+I.	Sample collection
+
+1.	Collect two round punches (largest size we have) from infiltrated leaves into 1.5mL eppendorf tube with 2 glass beads at desired time point (normally 2days post infiltration is good, if construct induces cell death, collect before cell death crushes out, usually 18 hr is ok). Freeze each sample right away in liquid nitrogen. Frozen samples can be stored in -80 oC for several months (or you can proceed to grinding and protein extractions).
+
+II.	Sample preparation and protein extraction 
+
+Before you begin sample processing:
+●	Prepare fresh Laemmli + bme solution (950 uL Laemmli buffer + 50 uL bme) - do this inside the chemical hood.
+●	Set the heat block located inside chemical hood to 95-100 oC (setting 5 on high)
+
+2.	Sample grinding
+2a. Bead beater: 
+●	Take samples out of -80 oC into liquid nitrogen, pre-cool bead beater cold blocks in liquid nitrogen. Put the samples inside the bead beater block and using heat/cold resistant gloves transfer into the bead beater. Grind for 1 minute.
+●	Transfer the samples back to liquid nitrogen and take to a pre-cooled centrifuge (4oC)
+●	Spin down ground tissue very briefly so samples remain frozen and put them back into liquid nitrogen.
+●	Working inside the chemical hood, process samples one by one by taking each sample out of liquid nitrogen, add 150 uL of  2x Laemmli Sample Buffer + 2-Merc and stir with pipet tip until fluid. Place each processed tube on ice.
+
+2b Manual drill: 
+●	If you have a small number of samples, you can process them with a drill. Pre-cool plastic grinders in liquid nitrogen, process samples one by one by grinding them briefly at high speed ( 3-5 seconds) and pushing the ground tissue to the bottom of the tube. Put each tube immediately back to liquid nitrogen.
+●	Working inside the chemical hood, process samples one by one by taking each sample out of liquid nitrogen, add 150 uL of  2x Laemmli Sample Buffer + 2-Merc. Using a room temperature plastic grinder, grind the tissue until it thaws completely. Place each processed tube on ice.
+
+3.	Secure lids with clams on each tube and boil all samples for 5 minutes in a heat block inside the hood (heated up to 95-100 oC). 
+
+4.	Spin the samples down at high speed for 10 minutes ar RT to pellet the debri. Transfer the supernatant into a new tube. At this point you can store samples for months in -20 or proceed to running the gel.
+
+III.	Running samples on the gel and transferring onto membrane
+ 
+1.	If you are using samples, stored in -20, re-boil them for 5 minutes before loading onto the gel.
+
+2.	Take out pre-cast SDS-PAGE gel (the gel % depends on the protein size you want to resolve, higher percentage gels are most suitable for smaller proteins, lower percent gels for large proteins) and remove packaging/protective strips.
+
+3.	Place it inside the gel running block (set it up inside the chemical hood if your sample extraction buffer contains bme). Add Gel running buffer until the mark on the gel tank.
+ 
+2.	Load 5 uL of ladder (no need to boil it) and 5-20 uL of samples. You need to load something into each well, so fill any blank lanes with 2x Laemmli Sample Buffer + 2-Merc.
+
+3.	Run the samples alongside with a ladder (100V for about one hour). Alternative running conditions are possible.
+
+4.	Take the gel cassettes out, crack the cassette open and using a razor blade separate the main separating portion of the gel from the stacking top portion. 
+
+5.	Keeping everything moist with a cold transfer buffer, assemble the transfer cassettes. You can set up transfer sandwich working inside a large tapeware half filled with transfer buffer as following: 
+●	Black portion of the cassette
+●	Sponge
+●	Whatman paper
+●	Gel
+●	Membrane (nitrocellolose)
+●	Whatman paper
+●	Sponge
+●	White portion of the casette
+
+6.	Put the transfer cassettes inside the transfer block, add ice block and stir bar and fill the tank with a transfer buffer. Place the tank inside a tapeware to catch any spill on a stir plate and begin stirring. Pay attention to cassette orientation (black to black, white to red). Run for 1.5 hr at constant 300mA which works for most protein sizes (~30 kDa-150 kDa); optimal transfer time depends on the size of your protein with smaller proteins transferring faster).  
+
+4.	Once the samples are transferred onto the membranes using wet transfer method, it is very important to keep the membranes moist at all the time (DO NOT LEAVE IT DRY OUT).
+ 
+5.	Get the membranes from the transfer block, and put each one into a separate plastic case containing TBS-T to rinse the gel briefly. Decant TBS-T and proceed to proceed to immunoblotting.
+
+IV. Immunoblotting
+
+1.	Block in 5% milk in TBS-T (0.5M NaCl, 20 mM Tris-Cl pH 7.5, 0.05% Tween) for an hour at RT or O/N at 4 oC
+
+2.	Incubate in 1o Ab diluted in 10 mLs of TBS-T for an hour at RT or O/N at 4 oC.
+
+3.	Wash once for 15 minutes and twice for 5 minutes in TBS-T (no milk). You can collect and store the 1o Ab in the fridge till next use. For longer storage, add sodium azide (caution, highly toxic)
+
+4.	Incubate in 2o Ab-HRP diluted in 10 mLs of 5% milk in TBS-T for an hour at RT.
+
+5.	Wash 1x 5 minutes and 1x 1 minute in TBS-T (no milk). You can store HRP conjugated antibodies for a short time in the fridge, you cannot not store HRP conjugated Ab in sodium azide.
+
+6.	Gently blot the excess of liquid off the membranes with a napkin.
+
+7.	Place the membrane on cellophane and add 3 mLs of Luminol substrate (Thermo Scientific). We have several Luminol solutions, pick one based on your protein expression level. Let the reaction run for 5 minutes.
+
+8.	Gently blot the excess of liquid off the membranes with a napkin.
+
+9.	Image the membrane within a minute inside the Gel Imager. The luminescence will decay with time, so it is important to image it right away. Therefore, it is best to do steps 7-9 near the imager to make sure you have immediate access to it.
+
+10.	Rinse the membrane in 1x TBS-T.
+
+11.	Stain with Ponceau S to confirm equal loading, gently rocking for 5 minutes. 
+12.	Wash the membrane with diH2O until desired band clarity. 
+13.	For future use, seal moist membrane in Ziploc or plastic wrap and store at 4°C. 
+ 
+Common Ab used in the lab and their dilutions
+
+1o Ab (HRP conjugated Ab do not require secondary Ab)
+
+anti-HA-HRP (rat monoclonal 3F10, Roche, 1:1000 dilution, add 10 uL into 10 mL) 
+anti-HA (rat monoclonal 3F10, Roche, 1:500 dilution, add 10 uL into 10 mL) 
+anti-HA (mouse
+anti-myc-HRP 
+anti-GFP-HRP 
+anti-Flag-HRP (clone? company? 1:1000 dilution, add 10 uL into 10 mL) 
+anti-Gal4-AD
+anti-Gal4-BD
+
+2o Ab
+
+goat anti-mouse 1:5000 (2 uL in 10 mLs)
+goat anti-rabbit 1:5000 (2 uL in 10 mLs)
+
+Luminol solutions
+Pierce ECL Western (cat 32106) - least sensitive
+SuperSignal West Pico PLUS (cat 34577) - medium sensitivity
+SuperSignal West Femto Maximum Sensitivity (cat 34095) - most sensitive
+
+Buffers and other reagents:
+
+2x Laemmli Sample Buffer + 2-Merc (make fresh) 
+
+950 μl 2x Laemmli Sample Buffer (Bio-Rad, Cat. #1610737, stocked in LSA storeroom) 
+50 μl 2-Mercaptoethanol 
+Keep on ice 
+
+If your protein does not appear in the soluble fraction, you can try total protein extraction by adding 10M Urea (0.6 g per 1 mL) to the extraction buffer. You’ll need to heat up the buffer briefly to dissolve Urea. Do not place it on ice. 
+
+10x SDS PAGE Running Buffer (1 L) - Lab stock, make a new batch if you are using it up
+30.3 g Tris base 
+144.1 g Glycine 
+10 g SDS 
+diH2O to 1 L 
+Do not adjust the pH (~pH 8.3) 
+
+Transfer (Towbin) buffer (4 L) - Lab stock, make a new batch if you are using it up
+1. First dissolve: 
+12.12 g Tris base 
+57.6 g Glycine 
+500 ml diH2O 
+2. Then add: 
+800 ml Methanol 
+diH2O to 1 L 
+
+10x TBS (4 L)  - Lab stock, make a new batch if you are using it up
+484.56 g Tris base 
+350.64 g NaCl 
+diH2O to 4 L 
+pH to 7.5 with HCl 
+
+1x TBS-T (1 L) 
+100 ml 10x TBS 
+900 ml diH2O 
+0.5 ml Tween-20 
+
+Blocking solution (50 ml) 
+50 ml 1x TBS-T 
+2.5 g dried non-fat milk 
+Dissolve well with a stir bar
+
+Other resources:
+
+Gel Imager user guide: http://www.bio-rad.co.il/webroot/web/pdf/lsr/literature/10022469.pdf
+
